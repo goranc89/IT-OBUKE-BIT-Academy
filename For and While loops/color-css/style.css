@@ -1,0 +1,33 @@
+.first-p {
+  color: darkturquoise;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.second-p {
+  color: rgb(0, 206, 209);
+  background-color: rgb(128, 128, 128, 0.5);
+}
+.third-p {
+  color: #00ced1;
+  background-color: #808080;
+}
+.first-div {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.second-div {
+  background-color: rgb(128, 128, 128, 0.5);
+}
+
+img {
+  width: 150px;
+}
+.first-row:first-child {
+  background-color: aliceblue;
+}
+.second-row td {
+  background-color: hotpink;
+}
+/* Nisam hteo da gubim vreme da menjam boju za svaku kololu jer to znam :) */

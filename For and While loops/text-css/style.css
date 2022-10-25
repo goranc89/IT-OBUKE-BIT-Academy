@@ -1,0 +1,94 @@
+body {
+  font-family: arial;
+  font-size: small;
+  font-weight: 300;
+}
+
+p {
+  width: 500px;
+}
+
+.first-p {
+  font-family: "Courier New";
+}
+.second-p {
+  font-family: sans-serif;
+  font-style: oblique;
+}
+.third-p {
+  font-family: impact;
+}
+
+.first-p-quote {
+  font-family: "lucida Sans";
+}
+.second-p-quote {
+  font-family: "Franklin Gothic Medium";
+}
+.third-p-quote {
+  font-family: verdana;
+}
+
+.first-span {
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Neue;
+  src: url(./NeueMachina-Regular.otf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+}
+
+.first-p {
+  font-family: Neue;
+}
+.third-p {
+  font-family: Roboto;
+}
+
+.new-first-p {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.new-second-p {
+  text-transform: lowercase;
+  text-decoration: line-through;
+}
+
+.prvi-p {
+  letter-spacing: 5px;
+  text-align: left;
+}
+.drugi-p {
+  line-height: 200%;
+  text-align: right;
+}
+.treci-p {
+  text-align: center;
+}
+
+ul {
+  color: blue;
+}
+
+ul > li {
+  text-shadow: 0.1px 0.2px red;
+}
+
+a:visited {
+  color: black;
+}
+
+a:focus {
+  color: green;
+}
+a:hover {
+  color: orange;
+}
+a:active {
+  color: blue;
+}
