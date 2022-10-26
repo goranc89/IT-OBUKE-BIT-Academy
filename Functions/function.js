@@ -28,6 +28,8 @@
 // 1. Write a program that calculates the maximum of two given numbers.
 
 // function sum(a, b) {
+//   let result = 0;
+
 //   if (a > b) {
 //     result = a;
 //   } else {
@@ -36,11 +38,12 @@
 //   return result;
 // }
 
-// console.log(sum(7, 5));
+// console.log(sum(7, 11));
 
 // 2. Write a program that checks if a given number is odd.
 
 // function num(a) {
+//   let result = 0;
 //   if (a % 2 == 0) {
 //     result = "Number is even";
 //   } else {
@@ -54,16 +57,17 @@
 // 3. Write a program that checks if a given number is a three digit long number.
 
 // function num(a) {
+//   let result = 0;
+
 //   if (a > 99 && a < 1000) {
 //     result = "Its 3 digit number";
 //   } else {
 //     result = "Its not 3 digit number";
 //   }
+//   return result;
 // }
 
-// num(102);
-
-// console.log(result);
+// console.log(num(10));
 
 // 4. Write a program that calculates an arithmetic mean of four numbers.
 
