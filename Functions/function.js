@@ -65,6 +65,12 @@
 
 // console.log(result);
 
+////////////////////////////////
+// Alternativa za zadatak broj 3: prebacis broj u string, proveris kolika je duzina stringa :) 
+///////////////////////////////
+
+
+
 // 4. Write a program that calculates an arithmetic mean of four numbers.
 
 // function sum(a, b, c, d) {
@@ -72,7 +78,15 @@
 //   return result;
 // }
 
+
+////////////////////////
+// Ovo je matematicki netacna funkcija jer nema zagrade. Racunace ti kao a + b + c + (d/4). Trebao si da stavis zagrade, jer je deljenje starije od sabiranja :)
+///////////////////////
+
+
 // console.log(sum(2, 2, 2, 2));
+
+
 
 // 5. Write a program that draws a square of a given size. For example, if the size of square
 // is 5 the program should draw:
@@ -101,6 +115,13 @@
 // }
 
 // console.log(sum(5));
+
+////////////////////////////
+// Ovaj ti je tacan, malo si ga zakomplikovao :) Probaj da ga uprostis ako mozes, ako ne onda ces se kad tad setiti prostijeg resenja.
+// Isto vazi i za zadatak broj 6.
+////////////////////////////
+
+
 
 // 6. Write a program that draws a horizontal chart representing three given values. For
 // example, if values are 5, 3, and 7, the program should draw:
