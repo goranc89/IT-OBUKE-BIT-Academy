@@ -210,3 +210,42 @@
 // }
 
 // console.log(word("adc", 4));
+
+// 5ti zadatak goran
+
+// var iterator = 5;
+// var brojKolona = 10
+
+// for (var i = 0; i < iterator; i++) {
+//   if (i == 0) {
+//     console.log("*****");
+//   } else if (i == iterator - 1) {
+//     console.log("*****");
+//   } else {
+//     console.log("* *");
+//   }
+// }
+
+// zadatak 5.
+
+// function squareStar(num) {
+//   var string = "";
+//   for (i = 0; i < num; i++){
+//       for (j = 0; j < num; j++) {
+//           if(i===0 || i=== num-1){
+//               string += "*";
+//           }else{
+//               if(j ===0 || j === num-1){
+//                   string += "*";
+//               }else{
+//                   string += " ";
+//               }
+//           }
+
+//       }
+//       string += "\n";
+//   }
+//   return string;
+// }
+// let num = squareStar(5);
+// console.log(num);
