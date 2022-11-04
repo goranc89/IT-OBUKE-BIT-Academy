@@ -1,0 +1,29 @@
+img {
+  width: 200px;
+}
+
+.first-img {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+
+.second-img {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.third-img {
+  position: absolute;
+  bottom: 10px;
+}
+
+.main-link {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+}

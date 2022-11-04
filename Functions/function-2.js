@@ -19,7 +19,7 @@
 // function txt(str) {
 //   let result = "";
 
-//   if (typeof str === "string" && str === " ") {
+//   if (typeof str === "string" && str === "") {
 //     result = "true";
 //   } else {
 //     result = "false";
@@ -28,7 +28,7 @@
 //   return result;
 // }
 
-// console.log(txt(" "));
+// console.log(txt(""));
 
 // 3. Write a function that concatenates a given string n times (default is 1).
 
@@ -60,6 +60,24 @@
 
 // console.log(sum("andrijan", "n"));
 
+// Branko resenje
+
+// function countLetters(string, letter) {
+//   var counter = 0;
+//   for (var i = 0; i < string.length; i++) {
+//     if (string[i] === letter) counter++;
+//   }
+//   console.log(
+//     "Number of letter " +
+//       letter +
+//       " in string '" +
+//       string +
+//       "' is " +
+//       counter
+//   );
+// }
+// countLetters("My random strinnng", "n");
+
 //5. Write a function to find the position of the first occurrence of a character in a string. The
 // result should be the position of character. If there are no occurrences of the character, the
 // function should return -1.
@@ -67,13 +85,12 @@
 // function sum(text, letter) {
 //   let result = "";
 
-//   // result = text.indexOf(letter);            rade oba resenja
-
 //   for (let i = 0; i < text.length; i++) {
 //     if (text[i] === letter) {
 //       result = text.indexOf(letter);
+//       break;
 //     } else {
-//       result = "-1";
+//       result = -1;
 //     }
 //   }
 
@@ -92,6 +109,8 @@
 //   for (let i = 0; i < string.length; i++) {
 //     if (string[i] == letter) {
 //       index = i;
+//     } else {
+//       index = -1;
 //     }
 //   }
 //   return index;
@@ -116,7 +135,22 @@
 //   return result;
 // }
 
-// console.log(sum("Random plus radi"));
+// console.log(sum("My random plus radi"));
+
+// function convertIntoArr(string) {
+//   var arr = [];
+
+//   for (var i = 0; i < string.length; i++) {
+//     if (string[i] === " ") {
+//       arr[i] = null;
+//     } else {
+//       arr[i] = string[i];
+//     }
+//   }
+
+//   console.log(arr);
+// }
+// convertIntoArr("My random string");
 
 // 8. Write a function that accepts a number as a parameter and checks if the number is prime or
 // not.
@@ -138,7 +172,7 @@
 //   }
 // }
 
-// console.log(test_prime(8));
+// console.log(test_prime(19));
 
 // 9. Write a function that replaces spaces in a string with provided separator. If separator is not
 // provided, use “-” (dash) as the default separator.
@@ -165,22 +199,39 @@
 
 // console.log(sum("My random string", "-"));
 
-// 10. Write a function to get the first n characters and add “...” at the end of newly created string.
+// Drugi nacin
 
-// function sum(text, letter) {
+// function sum(str, num) {
 //   let result = "";
 
-//   for (let i = 0; i < text.length; i++) {
-//     if (text[i] === letter) {
-//       result = text[i] + "...";
-
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//       result += num;
+//     } else {
+//       result += str[i];
 //     }
 //   }
 
 //   return result;
 // }
 
-// console.log(sum("andrijan", "n"));
+// console.log(sum("My random string", "-"));
+// 10. Write a function to get the first n characters and add “...” at the end of newly created string.
+
+// function sum(text, letter) {
+//   let result = "";
+//   let result1 = "";
+
+//   for (let i = 0; i < text.length; i++) {
+//     if (text[i] == letter) {
+//       result = text[i] + "...";
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(sum("andrijana", "n"));
 
 // ***********************
 
@@ -206,6 +257,29 @@
 // }
 
 // console.log(sum(["1", "21", undefined, "42", "1e+3", Infinity, 1]));
+
+// function toNumArray(arr) {
+//   var result = [];
+//   var counter = 0;
+
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] === null) {
+//       continue;
+//     } else if (isNaN(arr[i])) {
+//       continue;
+//     } else if (arr[i] === undefined) {
+//       continue;
+//     } else if (arr[i] === Infinity) {
+//       continue;
+//     } else {
+//       result[counter] = +arr[i];
+//       counter++;
+//     }
+//   }
+//   console.log(result);
+// }
+
+// toNumArray(["1", "21", undefined, null, "42", "1e+3", Infinity]);
 
 //12. Write a function to calculate how many years there are left until retirement based on the
 // year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is

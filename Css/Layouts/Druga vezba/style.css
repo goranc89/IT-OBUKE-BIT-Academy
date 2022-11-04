@@ -1,0 +1,163 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  padding: 0;
+  /* margin: 0; */
+}
+
+.nav-container {
+  max-width: 980px;
+  background-color: gainsboro;
+  height: 200px;
+  padding: 15px;
+}
+.nav-bar {
+  background-color: orange;
+  height: 50px;
+  padding: 10px;
+}
+.nav-links {
+  padding: 10px;
+}
+
+.home-main {
+  background-color: #cccccc;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+}
+.menu-hover {
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  margin-top: 9px;
+  padding: 0;
+  background-color: white;
+  width: 250px;
+
+  text-align: left;
+}
+
+.menu-hover:hover .menu-2 {
+  background-color: #cccccc;
+}
+.menu-hover:hover .sub-menu {
+  display: block;
+}
+
+.sub-links {
+  padding: 10px;
+
+  width: 100%;
+
+  display: block;
+  box-sizing: border-box;
+}
+
+.sub-links:hover {
+  background-color: #cccccc;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.all-divs {
+  width: 200px;
+  height: 200px;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: blue;
+}
+/* ------------------------------------------------------------------------- */
+
+.red-1 {
+  background-color: red;
+}
+
+.orange-1 {
+  background-color: orange;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+
+.blue-1 {
+  background-color: blue;
+
+  position: relative;
+  left: 200px;
+  top: -200px;
+}
+/* ------------------------------------------------------------------------- */
+
+.relative-pos {
+  position: relative;
+}
+.red-2 {
+  background-color: red;
+  float: right;
+  position: relative;
+  z-index: 10;
+}
+
+.orange-2 {
+  background-color: orange;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  z-index: 9;
+}
+
+.blue-2 {
+  background-color: blue;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  z-index: 8;
+}
+
+.empty-space {
+  height: 500px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.nav-container-new {
+  width: 960px;
+  height: 50px;
+  background-color: #c8352f;
+  position: relative;
+}
+
+.nav-bar-new {
+  display: flex;
+  /* width: fit-content; */
+  float: right;
+}
+
+.nav-link-new {
+  color: white;
+  padding-right: 15px;
+}
