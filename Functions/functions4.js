@@ -203,7 +203,7 @@
 //   return result;
 // }
 
-// console.log(sum([4, 5, 6, 2], [3, 8, 11, 9]));
+// console.log("" + sum([4, 5, 6, 2], [3, 8, 11, 9]));
 
 // function intertwinesTwoArrays(array1, array2) {
 //   var j = 0;
