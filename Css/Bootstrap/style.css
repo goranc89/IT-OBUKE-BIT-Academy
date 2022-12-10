@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0px;
+}
+
+.col {
+  background-color: rgb(226, 227, 227);
+  border: 1px solid rgb(168, 166, 166);
+  padding: 10px;
+}
+
+.first {
+  background-color: aqua;
+}
+.second {
+  background-color: aquamarine;
+}
+.third {
+  background-color: bisque;
+}
+
+.m-10 {
+  margin: 10px;
+}

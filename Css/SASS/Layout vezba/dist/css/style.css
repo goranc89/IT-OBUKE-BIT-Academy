@@ -1,0 +1,40 @@
+body {
+  background-color: white; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 960px;
+  margin: auto; }
+
+.nav-container-new {
+  background-color: #c8352f;
+  display: flex;
+  justify-content: flex-end; }
+
+.nav-bar-new {
+  display: flex; }
+  .nav-bar-new .nav-link-new {
+    margin-right: 20px; }
+
+.hero-section {
+  display: flex; }
+  .hero-section .left-img {
+    width: 50%; }
+  .hero-section .right-img {
+    width: 50%; }
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .main-grid .bg-div-red {
+    background-color: #c8352f;
+    height: 300px; }

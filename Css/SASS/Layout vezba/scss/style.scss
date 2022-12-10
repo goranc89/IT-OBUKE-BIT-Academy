@@ -1,0 +1,63 @@
+$color: red;
+$light-color: white;
+$primary-color: #c8352f;
+$secundary-color: orange;
+$blue-color: blue;
+
+body {
+  background-color: $light-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $light-color;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.nav-container-new {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar-new {
+  display: flex;
+
+  .nav-link-new {
+    margin-right: 20px;
+  }
+}
+
+.hero-section {
+  display: flex;
+
+  .left-img {
+    width: 50%;
+  }
+
+  .right-img {
+    width: 50%;
+  }
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .bg-div-red {
+    background-color: $primary-color;
+    height: 300px;
+  }
+}

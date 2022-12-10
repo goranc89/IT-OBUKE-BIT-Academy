@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // function sumTwo(first, second) {
 //   var rezultat = first + second;
 //   return rezultat;
@@ -249,3 +249,81 @@
 // }
 // let num = squareStar(5);
 // console.log(num);
+
+// var array = [];
+// var sum = 0;
+// for (var i = 1; i < 6; i++) {
+//   if (i == 3 || i == 4) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// var result;
+// result = f();
+// console.log(result);
+
+// function mul(a, b) {
+//   var result;
+//   result = a * b;
+//   return result;
+// }
+
+// var product;
+// product = mul(4);
+// console.log(product);
+
+// var result;
+// var n;
+
+// switch (n) {
+//   case 2:
+//     result = 1;
+//     break;
+//   case 4:
+//     result = 2;
+
+//   case 6:
+//     result = 3;
+//     break;
+
+//   default:
+//     result = 100;
+// }
+
+// console.log(result);
+
+// var description = "Do the magic";
+// var s = "";
+// for (var i = description.length - 1; i >= 0; i--) {
+//   s = s + description[i];
+// }
+// console.log(s);
+
+// var sum = 0;
+
+// for (var i = 0; i < 10; i++) {
+//   if (i == 6) {
+//     continue;
+//   }
+//   if (i % 3 == 0) {
+//     sum++;
+//   }
+// }
+
+// console.log(sum);
+
+// let blue = true;
+// let solid = false;
+
+// console.log(blue || solid);
+
+// var array = [2, 15, 18, -4, 2];
+// var result = array[0];
+
+// for (let i = 1; i < array.length; i++) {
+//   if (array[i] > result) {
+//     result = array[i];
+//   }
+// }
+// console.log(result);
