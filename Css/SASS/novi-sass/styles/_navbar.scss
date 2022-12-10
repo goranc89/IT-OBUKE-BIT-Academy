@@ -1,0 +1,118 @@
+.nav-bar {
+  background-color: $blueish;
+  height: 70px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: $secondary;
+}
+
+.nav-bar-wrap {
+  // background-color: $blueish;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-family: "Lato-Black";
+}
+
+.nav-links a {
+  color: $secondary;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $greenish;
+    text-decoration: none;
+  }
+}
+
+.nav-links-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  color: $secondary;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 5px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 10px;
+  }
+}
+
+// -----------------------------------------------------------
+
+@media screen and (max-width: 992px) {
+  .nav-logo {
+    position: relative;
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $secondary;
+    padding: 5px;
+    .bar-txt {
+      color: $secondary;
+      font-size: 25px;
+      margin-right: 5px;
+    }
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links-wrap {
+    position: fixed;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    left: 0;
+    top: -90px;
+    gap: 20px;
+    flex-direction: column;
+
+    align-items: flex-start;
+    background-color: $blueish;
+    width: 100%;
+
+    text-align: center;
+    transition: 0.3s;
+
+    @media screen and (max-width: 992px) {
+      padding-left: 38px;
+    }
+  }
+
+  .nav-links-wrap.active {
+    top: 70px;
+  }
+}

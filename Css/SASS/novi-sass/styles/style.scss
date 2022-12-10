@@ -1,0 +1,17 @@
+@import "global";
+@import "variables";
+@import "navbar";
+@import "masthead";
+@import "portfolio";
+@import "aboutus";
+@import "contact";
+@import "footer";
+
+$secondary: white;
+$greenColor: #18bc9c;
+$blueish: #2c3e50;
+$inputColor: #495057;
+
+body {
+  color: white;
+}

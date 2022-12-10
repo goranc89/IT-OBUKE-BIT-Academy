@@ -1,0 +1,106 @@
+.contact {
+  margin: 60px 0;
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .star-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .white-line {
+      width: 60px;
+      background-color: $primary;
+      height: 3px;
+    }
+  }
+
+  &-main-form {
+    max-width: 510px;
+    width: 100%;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    .all-inputs {
+      border: none;
+      border-bottom: 1px solid rgb(169, 169, 169, 0.3);
+
+      font-weight: 600;
+      transition: 300ms ease;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &:hover {
+        border-bottom: 1px solid $greenish;
+      }
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $inputColor;
+      }
+    }
+
+    input::placeholder {
+      transition: 300ms ease;
+    }
+    input:hover::placeholder {
+      color: $greenish;
+    }
+    input:focus::placeholder {
+      color: $inputColor;
+    }
+    textarea::placeholder {
+      transition: 300ms ease;
+    }
+    textarea:hover::placeholder {
+      color: $greenish;
+    }
+    textarea:focus::placeholder {
+      color: $inputColor;
+    }
+
+    .sub-btn {
+      align-self: flex-start;
+      background-color: $greenish;
+      color: $secondary;
+      font-weight: 700;
+      font-size: small;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
